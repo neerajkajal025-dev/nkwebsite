@@ -3,7 +3,7 @@
 // ==================================================
 
 // CHANGE THIS LINK LATER
-const redirectLink = "https://google.com";
+const redirectLink = "https://omg10.com/4/11001122";
 
 document.addEventListener('DOMContentLoaded', () => {
     // Find all clickable elements that a user might engage with
