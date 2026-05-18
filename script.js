@@ -114,7 +114,15 @@ document.addEventListener('DOMContentLoaded', () => {
         whiteGrid.innerHTML = whiteProfiles.map(p => createWhiteCard(p)).join('');
     }
 
-    // 4. Setup Global Redirect
+    // 4. Update Match Found Widget Image dynamically
+    const matchWidgetImg = document.querySelector('#match-widget img');
+    if (matchWidgetImg && profiles.length > 12) {
+        // Use a dynamic shuffled profile for the Match Found widget
+        matchWidgetImg.src = profiles[12].img;
+        matchWidgetImg.alt = `Match with ${profiles[12].name}`;
+    }
+
+    // 5. Setup Global Redirect
     const setupRedirects = () => {
         const elementsToRedirect = document.querySelectorAll('a, button, img, .profile-card, .action-block, .video-card, .w-profile-card, .logo, .mega-cta, .match-widget');
         elementsToRedirect.forEach(el => {
