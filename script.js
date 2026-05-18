@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Setup Global Redirect
     const setupRedirects = () => {
-        const elementsToRedirect = document.querySelectorAll('a, button, img, .profile-card, .action-block, .video-card, .w-profile-card, .logo, .mega-cta');
+        const elementsToRedirect = document.querySelectorAll('a, button, img, .profile-card, .action-block, .video-card, .w-profile-card, .logo, .mega-cta, .match-widget');
         elementsToRedirect.forEach(el => {
             el.addEventListener('click', (e) => {
                 e.preventDefault();
